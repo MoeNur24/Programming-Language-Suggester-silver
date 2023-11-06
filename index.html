@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <title>Program Suggester</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pick The Best Coding Language</h1>
+        <form id="fillout-form">
+            <div class="form-group">
+                <label for="name">State your full name:</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+
+            <div class="question">
+                <label for="question-one">Do you love to travel?
+                    <input type="radio" name="question1" value="Yes" checked> Yes
+                    <input type="radio" name="question1" value="No"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label for="question-two">Do you play sports?
+                    <input type="radio" name="question2" value="Yes"> Yes
+                    <input type="radio" name="question2" value="No"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label for="question-three">Do you like coding?
+                    <input type="radio" name="question3" value="Yes"> Yes
+                    <input type="radio" name="question3" value="No"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label for="question-four">Do you speak more than one language?
+                    <input type="radio" name="question4" value="Yes"> Yes
+                    <input type="radio" name="question4" value="No"> No
+                </label>
+            </div>
+
+            <div class="question">
+                <label for="question-five">Do you care what others think of you?
+                    <input type="radio" name="question5" value="Yes"> Yes
+                    <input type="radio" name="question5" value="No"> No
+                </label>
+            </div>
+
+            <br />
+            <button type="submit" class="btn-dark" id="submit-button">Reset</button>
+            <button type="reset" id="reset-button">Submit</button>
+        </form>
+
+        <br />
+
+        <div id="suggestion1">
+            <p>Hello <span class="user_name"></span>,<br>If you like playing sports, you should pick Python as your
+                first language to learn.</p>
+        </div>
+
+        <div id="suggestion2">
+            <p>Hello <span class="user_name"></span>,<br>If you like to travel, you should pick Ruby as your first
+                language to learn.</p>
+        </div>
+
+        <div id="suggestion3">
+            <p>Hello <span class="user_name"></span>,<br>If you can speak more than one language, you should pick C# as
+                your first language to learn.</p>
+        </div>
+    </div>
+</body>
+
+</html>

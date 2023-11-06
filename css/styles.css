@@ -1,0 +1,72 @@
+#suggestion1,
+#suggestion2,
+#suggestion3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    display: none;
+    margin-top: 20px;
+    background-color: #dff0d8;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #d6e9c6
+}
+
+h1 {
+    color: black;
+    margin: 10%;
+    font-family: 'Times New Roman', Times, serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+    font-style: oblique;
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+body {
+    padding: 11%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(https://t3.ftcdn.net/jpg/04/87/25/96/360_F_487259621_skN0Ty9jCZdoU5sdHpR5a0g5XmZ5ozep.jpg)
+}
+
+div>p {
+    padding: 3%;
+    flex: content;
+}
+
+.user_name {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+}
+
+div>label {
+    padding: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: inline-flex;
+    color: rgb(3, 95, 40)
+}
+
+.text-center {
+    font-size: large;
+}
+
+#fillout-form {
+    font-weight: bold;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button {
+    background-color: rgb(16, 121, 121);
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10xp 15px;
+    border: none;
+}
