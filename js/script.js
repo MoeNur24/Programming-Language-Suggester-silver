@@ -19,7 +19,10 @@ function handleFormSubmit() {
         document.getElementById("suggestion2").style.display = "block";
     } else if (answer5 === "Yes") {
         document.getElementById("suggestion3").style.display = "block";
+    } else {
+        document.getElementById("suggestion1").style.display = "block";
     }
+
 
     // Display user's name in suggestions 
     document.querySelector(".user_name").textContent = name;
