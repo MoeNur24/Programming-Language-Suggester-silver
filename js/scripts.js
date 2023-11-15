@@ -1,4 +1,5 @@
-function handleFormSubmit() {
+function handleFormSubmit(e) {
+    e.preventDefault();
     // It will gather form data
     let name = document.getElementById("name").value;
     let answer1 = document.querySelector("input[name=question1]:checked").value;
@@ -23,24 +24,21 @@ function handleFormSubmit() {
         document.getElementById("suggestion1").style.display = "block";
     }
 
-
     // Display user's name in suggestions 
     document.querySelector(".user_name").textContent = name;
 }
-
-function submission() {
-    document.getElementById("submit-button").addEventListener("click", () => {
-        handleFormSubmit();
-    });
-};
 function reset() {
     document.getElementById("reset-button").addEventListener("click", () => {
-        handleFormSubmit().reset();
+        let form = document.getElementById("fillout-form")
+        form.reset()
+        document.getElementById("suggestion1").style.display = "none";
+        document.getElementById("suggestion2").style.display = "none";
+        document.getElementById("suggestion3").style.display = "none";
     })
 };
 
-window.onload = function (e) {
-    e.preventDefault();
-    submission();
-    reset();
-};
+window.addEventListener("load", () => {
+    let form =document.getElementById("fillout-form")
+    form.addEventListener("submit", handleFormSubmit)
+    reset()
+})
